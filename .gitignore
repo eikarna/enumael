@@ -1,0 +1,15 @@
+# Kredensial & data hasil
+qoder_akun.txt
+qoder_sukses.txt
+qoder_failed.txt
+qoder_api_keys.txt
+qoder_log.txt
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store

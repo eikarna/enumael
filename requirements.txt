@@ -1,0 +1,6 @@
+boto3
+colorama
+fake-useragent
+camoufox
+playwright
+playwright-stealth
