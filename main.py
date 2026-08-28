@@ -31,8 +31,8 @@ def print_color(text, color=Colors.RESET):
 def banner():
     print(f"""
 {Colors.CYAN}╔══════════════════════════════════════════════════════════╗
-║     Qoder Automation - FULL AUTOMATION                       ║
-║     Auto-claim Pro Trial + 300 Credits                      ║
+║     Qoder                       ║
+║     Pro Trial + 300 Credits                      ║
 ║     Version: 5.0.0                                           ║
 ║     Support: macOS | Windows | Linux                        ║
 ║     With Stealth + Playwright                               ║
@@ -521,10 +521,7 @@ class QoderPatcher:
             traceback.print_exc()
             return False
 
-# ================= QODER CLIENT AUTOMATION =================
-
 class QoderClientAutomation:
-    """Automate Qoder Client for multiple platforms with UI interaction"""
     
     def __init__(self, headless: bool = False, platform_type: str = None, timeout: int = 120000):
         self.headless = headless
@@ -834,7 +831,6 @@ class QoderClientAutomation:
             return False
     
     async def click_signin_pyautogui(self) -> bool:
-        """Klik Sign In menggunakan pyautogui dengan image recognition"""
         try:
             import pyautogui
             pyautogui.FAILSAFE = True
@@ -1076,9 +1072,6 @@ class QoderClientAutomation:
     # ================= LOGIN METHODS =================
     
     async def login_via_browser(self, email: str, password: str, device_auth_url: str = None) -> bool:
-        """
-        Login ke Qoder via browser automation menggunakan Playwright dengan stealth
-        """
         print_color("  [*] Mengotomatisasi login di browser (Playwright + Stealth)...", Colors.CYAN)
         write_log(f"Starting browser login for {email}", "INFO")
         
