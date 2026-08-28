@@ -1,12 +1,3 @@
-"""
-Qoder Automation - FULL AUTOMATION WITH UI INTERACTION
-Auto-claim Pro Trial + 300 Credits
-Version: 5.0.0
-Mendukung: macOS, Windows, Linux
-Dengan otomatisasi klik tombol Sign In
-Menggunakan Playwright dengan stealth
-"""
-
 import asyncio
 import json
 import re
